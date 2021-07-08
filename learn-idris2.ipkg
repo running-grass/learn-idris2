@@ -1,0 +1,47 @@
+package learn-idris2
+-- version =
+authors = "running-grass"
+-- maintainers =
+-- license =
+-- brief =
+-- readme =
+-- homepage =
+-- sourceloc =
+-- bugtracker =
+
+modules = Main
+        , DOM
+
+-- packages to add to search path
+-- depends =
+
+-- modules to install
+-- modules =
+
+-- main file (i.e. file to load at REPL)
+main = Main
+
+-- name of executable
+executable = "index.html"
+opts = "--cg javascript"
+sourcedir = "src"
+builddir = "build"
+outputdir = "dist"
+
+-- script to run before building
+-- prebuild =
+
+-- script to run after building
+-- postbuild =
+
+-- script to run after building, before installing
+-- preinstall =
+
+-- script to run after installing
+-- postinstall =
+
+-- script to run before cleaning
+-- preclean =
+
+-- script to run after cleaning
+-- postclean =

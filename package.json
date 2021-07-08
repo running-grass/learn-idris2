@@ -1,0 +1,14 @@
+{
+  "name": "learn-idris2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "debug": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-run": "^1.7.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
