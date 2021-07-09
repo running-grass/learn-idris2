@@ -25,9 +25,15 @@ body = map MkNode $ primIO $ prim__body ()
 %foreign "browser:lambda: n=>(BigInt(n.width))"
 prim__width : AnyPtr -> PrimIO Int
 
+%foreign "browser:lambda: html => document.write(html)"
+prim__write : String -> PrimIO ()
+
+write : HasIO io => String -> io ()
+write html = primIO $ prim__write html
+
 width : HasIO io => DomNode -> io Int
 width (MkNode p) = primIO $ prim__width p
 
 main : IO ()
 main = do
-  consoleLog $ cast $ testFun 10000
+  write "Hello World!"
