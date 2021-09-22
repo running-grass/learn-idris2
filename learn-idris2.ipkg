@@ -10,7 +10,7 @@ authors = "running-grass"
 -- bugtracker =
 
 modules = Main
-        , DOM
+--        , DOM
 
 -- packages to add to search path
 -- depends =
@@ -22,8 +22,9 @@ modules = Main
 main = Main
 
 -- name of executable
-executable = "index.html"
-opts = "--cg javascript"
+executable = "app"
+-- opts = "--cg javascript"
+-- opts = "--cg refc"
 sourcedir = "src"
 builddir = "build"
 outputdir = "dist"
