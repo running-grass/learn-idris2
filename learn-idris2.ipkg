@@ -24,7 +24,7 @@ main = Main
 -- name of executable
 executable = "app"
 -- opts = "--cg javascript"
--- opts = "--cg refc"
+opts = "--cg refc"
 sourcedir = "src"
 builddir = "build"
 outputdir = "dist"
